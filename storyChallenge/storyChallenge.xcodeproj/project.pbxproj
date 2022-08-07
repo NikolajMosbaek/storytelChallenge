@@ -9,13 +9,19 @@
 /* Begin PBXBuildFile section */
 		1C5247FC289FEC400024A958 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5247FB289FEC400024A958 /* AppDelegate.swift */; };
 		1C5247FE289FEC400024A958 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5247FD289FEC400024A958 /* SceneDelegate.swift */; };
-		1C524800289FEC400024A958 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5247FF289FEC400024A958 /* ViewController.swift */; };
-		1C524803289FEC400024A958 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C524801289FEC400024A958 /* Main.storyboard */; };
+		1C524800289FEC400024A958 /* BookListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5247FF289FEC400024A958 /* BookListViewController.swift */; };
 		1C524805289FEC410024A958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C524804289FEC410024A958 /* Assets.xcassets */; };
 		1C524808289FEC410024A958 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C524806289FEC410024A958 /* LaunchScreen.storyboard */; };
 		1C524813289FEC410024A958 /* storyChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C524812289FEC410024A958 /* storyChallengeTests.swift */; };
 		1C52481D289FEC410024A958 /* storyChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C52481C289FEC410024A958 /* storyChallengeUITests.swift */; };
 		1C52481F289FEC410024A958 /* storyChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C52481E289FEC410024A958 /* storyChallengeUITestsLaunchTests.swift */; };
+		1C524830289FF2CD0024A958 /* BookListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C52482F289FF2CD0024A958 /* BookListCell.swift */; };
+		1C524833289FF5220024A958 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C524832289FF5220024A958 /* Book.swift */; };
+		1C524835289FF5850024A958 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C524834289FF5850024A958 /* Author.swift */; };
+		1C524837289FF5B50024A958 /* Narrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C524836289FF5B50024A958 /* Narrator.swift */; };
+		1C524839289FF5E60024A958 /* Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C524838289FF5E60024A958 /* Format.swift */; };
+		1C52483B289FF64E0024A958 /* Cover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C52483A289FF64E0024A958 /* Cover.swift */; };
+		1C524840289FF6F90024A958 /* SeriesInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C52483F289FF6F90024A958 /* SeriesInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +45,7 @@
 		1C5247F8289FEC400024A958 /* storyChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = storyChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C5247FB289FEC400024A958 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C5247FD289FEC400024A958 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1C5247FF289FEC400024A958 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1C524802289FEC400024A958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1C5247FF289FEC400024A958 /* BookListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListViewController.swift; sourceTree = "<group>"; };
 		1C524804289FEC410024A958 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C524807289FEC410024A958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C524809289FEC410024A958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +54,13 @@
 		1C524818289FEC410024A958 /* storyChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = storyChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C52481C289FEC410024A958 /* storyChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storyChallengeUITests.swift; sourceTree = "<group>"; };
 		1C52481E289FEC410024A958 /* storyChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storyChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1C52482F289FF2CD0024A958 /* BookListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListCell.swift; sourceTree = "<group>"; };
+		1C524832289FF5220024A958 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		1C524834289FF5850024A958 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		1C524836289FF5B50024A958 /* Narrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Narrator.swift; sourceTree = "<group>"; };
+		1C524838289FF5E60024A958 /* Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Format.swift; sourceTree = "<group>"; };
+		1C52483A289FF64E0024A958 /* Cover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cover.swift; sourceTree = "<group>"; };
+		1C52483F289FF6F90024A958 /* SeriesInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +111,10 @@
 		1C5247FA289FEC400024A958 /* storyChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				1C524831289FF5160024A958 /* Models */,
+				1C52482C289FEF9A0024A958 /* Pages */,
 				1C5247FB289FEC400024A958 /* AppDelegate.swift */,
 				1C5247FD289FEC400024A958 /* SceneDelegate.swift */,
-				1C5247FF289FEC400024A958 /* ViewController.swift */,
-				1C524801289FEC400024A958 /* Main.storyboard */,
 				1C524804289FEC410024A958 /* Assets.xcassets */,
 				1C524806289FEC410024A958 /* LaunchScreen.storyboard */,
 				1C524809289FEC410024A958 /* Info.plist */,
@@ -125,6 +137,44 @@
 				1C52481E289FEC410024A958 /* storyChallengeUITestsLaunchTests.swift */,
 			);
 			path = storyChallengeUITests;
+			sourceTree = "<group>";
+		};
+		1C52482C289FEF9A0024A958 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				1C52482D289FEFA30024A958 /* BookList */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		1C52482D289FEFA30024A958 /* BookList */ = {
+			isa = PBXGroup;
+			children = (
+				1C52482E289FF2A10024A958 /* Views */,
+				1C5247FF289FEC400024A958 /* BookListViewController.swift */,
+			);
+			path = BookList;
+			sourceTree = "<group>";
+		};
+		1C52482E289FF2A10024A958 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1C52482F289FF2CD0024A958 /* BookListCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1C524831289FF5160024A958 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1C524832289FF5220024A958 /* Book.swift */,
+				1C524834289FF5850024A958 /* Author.swift */,
+				1C524836289FF5B50024A958 /* Narrator.swift */,
+				1C524838289FF5E60024A958 /* Format.swift */,
+				1C52483A289FF64E0024A958 /* Cover.swift */,
+				1C52483F289FF6F90024A958 /* SeriesInfo.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +283,6 @@
 			files = (
 				1C524808289FEC410024A958 /* LaunchScreen.storyboard in Resources */,
 				1C524805289FEC410024A958 /* Assets.xcassets in Resources */,
-				1C524803289FEC400024A958 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +307,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C524800289FEC400024A958 /* ViewController.swift in Sources */,
+				1C524839289FF5E60024A958 /* Format.swift in Sources */,
+				1C52483B289FF64E0024A958 /* Cover.swift in Sources */,
+				1C524835289FF5850024A958 /* Author.swift in Sources */,
+				1C524830289FF2CD0024A958 /* BookListCell.swift in Sources */,
+				1C524800289FEC400024A958 /* BookListViewController.swift in Sources */,
 				1C5247FC289FEC400024A958 /* AppDelegate.swift in Sources */,
+				1C524840289FF6F90024A958 /* SeriesInfo.swift in Sources */,
+				1C524837289FF5B50024A958 /* Narrator.swift in Sources */,
+				1C524833289FF5220024A958 /* Book.swift in Sources */,
 				1C5247FE289FEC400024A958 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +353,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1C524801289FEC400024A958 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1C524802289FEC400024A958 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1C524806289FEC410024A958 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,7 +490,6 @@
 				INFOPLIST_FILE = storyChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +517,6 @@
 				INFOPLIST_FILE = storyChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
