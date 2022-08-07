@@ -22,6 +22,8 @@
 		1C524839289FF5E60024A958 /* Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C524838289FF5E60024A958 /* Format.swift */; };
 		1C52483B289FF64E0024A958 /* Cover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C52483A289FF64E0024A958 /* Cover.swift */; };
 		1C524840289FF6F90024A958 /* SeriesInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C52483F289FF6F90024A958 /* SeriesInfo.swift */; };
+		1C52484428A0067E0024A958 /* BookListAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C52484328A0067E0024A958 /* BookListAPI.swift */; };
+		1C52484628A00C090024A958 /* Books.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C52484528A00C090024A958 /* Books.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		1C524838289FF5E60024A958 /* Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Format.swift; sourceTree = "<group>"; };
 		1C52483A289FF64E0024A958 /* Cover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cover.swift; sourceTree = "<group>"; };
 		1C52483F289FF6F90024A958 /* SeriesInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesInfo.swift; sourceTree = "<group>"; };
+		1C52484328A0067E0024A958 /* BookListAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListAPI.swift; sourceTree = "<group>"; };
+		1C52484528A00C090024A958 /* Books.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Books.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,7 @@
 		1C5247FA289FEC400024A958 /* storyChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				1C52484228A0058C0024A958 /* API */,
 				1C524831289FF5160024A958 /* Models */,
 				1C52482C289FEF9A0024A958 /* Pages */,
 				1C5247FB289FEC400024A958 /* AppDelegate.swift */,
@@ -167,6 +172,7 @@
 		1C524831289FF5160024A958 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1C52484528A00C090024A958 /* Books.swift */,
 				1C524832289FF5220024A958 /* Book.swift */,
 				1C524834289FF5850024A958 /* Author.swift */,
 				1C524836289FF5B50024A958 /* Narrator.swift */,
@@ -175,6 +181,14 @@
 				1C52483F289FF6F90024A958 /* SeriesInfo.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		1C52484228A0058C0024A958 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				1C52484328A0067E0024A958 /* BookListAPI.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,7 +321,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C52484628A00C090024A958 /* Books.swift in Sources */,
 				1C524839289FF5E60024A958 /* Format.swift in Sources */,
+				1C52484428A0067E0024A958 /* BookListAPI.swift in Sources */,
 				1C52483B289FF64E0024A958 /* Cover.swift in Sources */,
 				1C524835289FF5850024A958 /* Author.swift in Sources */,
 				1C524830289FF2CD0024A958 /* BookListCell.swift in Sources */,

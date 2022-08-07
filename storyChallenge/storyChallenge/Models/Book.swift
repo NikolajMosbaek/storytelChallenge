@@ -21,5 +21,5 @@ struct Book: Identifiable, Codable {
 	var seriesInfo: SeriesInfo
 	var decoratedTitle: String
 	var kidsBook: Bool
-	var resultType: Bool
+	var resultType: String
 }
