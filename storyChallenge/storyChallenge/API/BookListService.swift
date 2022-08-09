@@ -11,7 +11,7 @@ import Foundation
 class BookListService {
 	private let store = BookListStore()
 	
-	func getList(page: Int = 0) -> AnyPublisher<Books, Error> {
+	func getList(page: Int) -> AnyPublisher<Books, Error> {
 		Future<Books, Error> { handler in
 			self.store.get(page: page) { books, error in
 				if let error = error {

@@ -7,77 +7,107 @@
 
 import UIKit
 
-protocol BookListCellData {
-	var imageURL: URL { get }
-	var bookTitle: String { get }
-	var authors: [String] { get }
-	var narrators: [String] { get }
+struct BookListCellDependencies {
+	var imageURL: URL
+	var bookTitle: String
+	var authors: [String]
+	var narrators: [String]
 }
 
 class BookListCell: UITableViewCell {
 	
 	static let reuseIdentifier = "BookListCell"
 	
-	var data: BookListCellData?
+	private var dependencies: BookListCellDependencies!
+	private let margine: CGFloat = 8
+	private let padding: CGFloat = 4
 	
-	private lazy var image: UIImageView? = {
+	private lazy var image: UIImageView = {
 		let imageView = UIImageView()
-		imageView.backgroundColor = .gray
+		imageView.contentMode = .scaleAspectFit
 		imageView.translatesAutoresizingMaskIntoConstraints = false
 		return imageView
 	}()
 	private lazy var titleLabel: UILabel = {
 		let titleLabel = UILabel()
+		titleLabel.font = .boldSystemFont(ofSize: 16)
 		titleLabel.translatesAutoresizingMaskIntoConstraints = false
 		return titleLabel
 	}()
 	private lazy var authorLable: UILabel = {
 		let authorLabel = UILabel()
+		authorLabel.font = .systemFont(ofSize: 14)
+		authorLabel.textColor = .lightGray
 		authorLabel.translatesAutoresizingMaskIntoConstraints = false
 		return authorLabel
 	}()
 	private lazy var narratorLabel: UILabel = {
 		let narratorLabel = UILabel()
+		narratorLabel.font = .systemFont(ofSize: 14)
+		narratorLabel.textColor = .lightGray
 		narratorLabel.translatesAutoresizingMaskIntoConstraints = false
 		return narratorLabel
 	}()
 	
-	override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-		super.init(style: style, reuseIdentifier: reuseIdentifier)
-		
-		addImage(URL(string: "google.com")!)
-	}
-	
-	required init?(coder: NSCoder) {
-		fatalError("init(coder:) has not been implemented")
-	}
-	
 	override func prepareForReuse() {
 		super.prepareForReuse()
 		
-		addImage(URL(string: "google.com")!)
+		self.image.image = nil
+		self.titleLabel.text = ""
+		self.authorLable.text = ""
+		self.narratorLabel.text = ""
 	}
 	
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+	func set(dependencies: BookListCellDependencies) {
+		self.dependencies = dependencies
+		addImage(dependencies.imageURL)
+		addTitle(dependencies.bookTitle)
+		addNarrators(dependencies.narrators)
+		addAuthors(dependencies.authors)
+	}
 	
-	func addImage(_ imageURL: URL) {
-		guard let image = image else {
-			return
-		}
-		
+	private func addImage(_ imageURL: URL) {
+		image.loadFrom(url: imageURL)
 		self.addSubview(image)
 
-		let padding: CGFloat = 8
 		NSLayoutConstraint.activate([
-			image.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: padding),
-			image.topAnchor.constraint(equalTo: self.topAnchor, constant: padding),
-			image.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -padding),
+			image.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: margine),
+			image.topAnchor.constraint(equalTo: self.topAnchor, constant: margine),
+			image.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -margine),
 			image.widthAnchor.constraint(equalTo: image.heightAnchor)
 		])
 	}
+	
+	private func addTitle(_ title: String) {
+		titleLabel.text = title
+		self.addSubview(titleLabel)
+		
+		NSLayoutConstraint.activate([
+			titleLabel.leadingAnchor.constraint(equalTo: image.trailingAnchor, constant: padding),
+			titleLabel.topAnchor.constraint(equalTo: image.topAnchor, constant: padding),
+			titleLabel.trailingAnchor.constraint(lessThanOrEqualTo: self.trailingAnchor, constant: -margine)
+		])
+	}
+	
+	private func addNarrators(_ narrators: [String]) {
+		narratorLabel.text = "with \(narrators.joined(separator: ", "))"
+		self.addSubview(narratorLabel)
+		
+		NSLayoutConstraint.activate([
+			narratorLabel.leadingAnchor.constraint(equalTo: image.trailingAnchor, constant: padding),
+			narratorLabel.bottomAnchor.constraint(equalTo: image.bottomAnchor, constant: -padding),
+			narratorLabel.trailingAnchor.constraint(lessThanOrEqualTo: self.trailingAnchor, constant: -margine)
+		])
+	}
 
+	private func addAuthors(_ authors: [String]) {
+		authorLable.text = "by \(authors.joined(separator: ", "))"
+		self.addSubview(authorLable)
+		
+		NSLayoutConstraint.activate([
+			authorLable.leadingAnchor.constraint(equalTo: image.trailingAnchor, constant: padding),
+			authorLable.bottomAnchor.constraint(equalTo: narratorLabel.topAnchor, constant: -padding),
+			authorLable.trailingAnchor.constraint(lessThanOrEqualTo: self.trailingAnchor, constant: -margine)
+		])
+	}
 }

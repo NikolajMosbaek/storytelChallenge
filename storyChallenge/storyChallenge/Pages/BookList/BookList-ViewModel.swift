@@ -11,16 +11,25 @@ import Foundation
 extension BookListViewController {
 	class ViewModel {
 		
-		var books: Books?
+		@Published private(set) var books: Books = Books(query: "", filter: "", nextPageToken: "", totalCount: 0, items: [])
+		
 		let service = BookListService()
 		var cancellables: Set<AnyCancellable> = []
 		
+		private var getIsOngoing = false
+		
 		func getBooks() {
+			guard !getIsOngoing else {
+				return
+			}
+			
+			getIsOngoing = true
+			
 			service
-				.getList()
-				.sink(receiveCompletion: { _ in }, receiveValue: { books in
-					self.books = books
-					print("Found \(books.items.count) books")
+				.getList(page: Int(books.nextPageToken) ?? 0)
+				.sink(receiveCompletion: { _ in }, receiveValue: { [weak self] books in
+					self?.getIsOngoing = false
+					self?.books.addData(books)
 				})
 				.store(in: &self.cancellables)
 		}
