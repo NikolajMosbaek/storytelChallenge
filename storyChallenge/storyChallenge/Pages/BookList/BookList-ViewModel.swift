@@ -25,10 +25,12 @@ extension BookListViewController {
 			
 			getIsOngoing = true
 			
+			print("Getting page \(books.nextPageToken)")
 			service
 				.getList(page: Int(books.nextPageToken) ?? 0)
-				.sink(receiveCompletion: { _ in }, receiveValue: { [weak self] books in
+				.sink(receiveCompletion: { [weak self] _ in
 					self?.getIsOngoing = false
+				}, receiveValue: { [weak self] books in
 					self?.books.addData(books)
 				})
 				.store(in: &self.cancellables)

@@ -3,17 +3,14 @@
 //  storyChallenge
 //
 //  Created by Nikolaj Simonsen on 07/08/2022.
-//
+///
+
 
 import Foundation
 
 class BookListStore {
-	private let baseURL = URL(string: "https://api.storytel.net/search/client?query=harry&searchFor=books&store=STHP-SE")!
-	
 	func get(page: Int, completionHandler: @escaping(Books?, Error?) -> Void) {
-		// TODO: Add page
-		let task = URLSession.shared.dataTask(with: baseURL) { data, response, error in
-			
+		let task = URLSession.shared.dataTask(with: getURL(page: String(page))) { data, response, error in
 			if let error = error {
 				completionHandler(nil, error)
 				return
@@ -27,5 +24,20 @@ class BookListStore {
 			completionHandler(books, nil)
 		}
 		task.resume()
+	}
+	
+	private func getURL(page: String) -> URL {
+		var components = URLComponents()
+		components.scheme = "https"
+		components.host = "api.storytel.net"
+		components.path = "/search/client"
+		components.queryItems = [
+			URLQueryItem(name: "query", value: "harry"),
+			URLQueryItem(name: "searchFor", value: "books"),
+			URLQueryItem(name: "store", value: "STHP-SE"),
+			URLQueryItem(name: "page", value: page)
+		]
+		
+		return components.url!
 	}
 }
