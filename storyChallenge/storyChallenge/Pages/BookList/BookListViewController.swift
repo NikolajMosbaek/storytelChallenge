@@ -20,6 +20,7 @@ class BookListViewController: UIViewController {
 		tableView.rowHeight = 100
 		tableView.tableHeaderView = BookListHeader(query: "Harry")
 		tableView.tableFooterView = spinner
+		tableView.allowsSelection = false
 		tableView.translatesAutoresizingMaskIntoConstraints = false
 		
 		
