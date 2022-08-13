@@ -13,7 +13,7 @@ extension BookListViewController {
 		
 		@Published private(set) var books: Books = Books(query: "", filter: "", nextPageToken: "", totalCount: 0, items: [])
 		
-		let service = BookListService()
+		let service = BookListService(dependency: BookListStore())
 		var cancellables: Set<AnyCancellable> = []
 		
 		private var getIsOngoing = false

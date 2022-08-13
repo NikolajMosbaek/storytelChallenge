@@ -8,7 +8,7 @@
 
 import Foundation
 
-class BookListStore {
+class BookListStore: BookListServiceDepedencies {
 	func get(page: Int, completionHandler: @escaping(Books?, Error?) -> Void) {
 		let task = URLSession.shared.dataTask(with: getURL(page: String(page))) { data, response, error in
 			if let error = error {

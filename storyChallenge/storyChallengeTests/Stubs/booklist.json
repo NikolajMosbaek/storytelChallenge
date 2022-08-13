@@ -1,0 +1,638 @@
+{
+  "query": "harry",
+  "filter": "books",
+  "nextPageToken": "10",
+  "totalCount": 5417,
+  "items": [
+	{
+	  "id": "134962",
+	  "deepLink": "storytel://books/109584",
+	  "title": "Harry Potter och De Vises Sten",
+	  "bookId": 109584,
+	  "shareUrl": "https://www.storytel.com/se/sv/books/109584?appRedirect=true",
+	  "language": "sv",
+	  "authors": [
+		{
+		  "id": "1998",
+		  "name": "J.K. Rowling",
+		  "deepLink": "storytel://booklist/authors/1998/J.K.%20Rowling"
+		}
+	  ],
+	  "narrators": [
+		{
+		  "id": "167",
+		  "name": "BjÃ¶rn Kjellman",
+		  "deepLink": "storytel://booklist/narrators/167/Bj%C3%B6rn%20Kjellman"
+		}
+	  ],
+	  "formats": [
+		{
+		  "id": "134962",
+		  "type": "abook",
+		  "releaseDate": "2017-06-15T00:00:00Z",
+		  "cover": {
+			"url": "https://covers.storytel.com/jpg-640/9781781108956.69941ab5-f20b-4dca-b59c-1a44b1ca8b65",
+			"width": 640,
+			"height": 640
+		  },
+		  "released": true,
+		  "lockedContent": false,
+		  "isReleased": true,
+		  "isLockedContent": false
+		},
+		{
+		  "id": "919670",
+		  "type": "ebook",
+		  "releaseDate": "2015-12-08T00:00:00Z",
+		  "cover": {
+			"url": "https://covers.storytel.com/jpg-640/9781781105641.3e1ee1fa-5bb8-4055-b617-399d54d3a689",
+			"width": 427,
+			"height": 640
+		  },
+		  "released": true,
+		  "lockedContent": false,
+		  "isReleased": true,
+		  "isLockedContent": false
+		}
+	  ],
+	  "averageRating": 4.65,
+	  "seriesInfo": {
+		"id": "24647",
+		"name": "Harry Potter",
+		"orderInSeries": 1,
+		"deepLink": "storytel://booklist/series/24647/Harry%20Potter"
+	  },
+	  "decoratedTitle": "Harry Potter och De Vises Sten",
+	  "similarItemsDeepLink": null,
+	  "kidsBook": true,
+	  "resultType": "book"
+	},
+	{
+	  "id": "134993",
+	  "deepLink": "storytel://books/109590",
+	  "title": "Harry Potter och DÃ¶dsrelikerna",
+	  "bookId": 109590,
+	  "shareUrl": "https://www.storytel.com/se/sv/books/109590?appRedirect=true",
+	  "language": "sv",
+	  "authors": [
+		{
+		  "id": "1998",
+		  "name": "J.K. Rowling",
+		  "deepLink": "storytel://booklist/authors/1998/J.K.%20Rowling"
+		}
+	  ],
+	  "narrators": [
+		{
+		  "id": "167",
+		  "name": "BjÃ¶rn Kjellman",
+		  "deepLink": "storytel://booklist/narrators/167/Bj%C3%B6rn%20Kjellman"
+		}
+	  ],
+	  "formats": [
+		{
+		  "id": "919687",
+		  "type": "ebook",
+		  "releaseDate": "2015-12-08T00:00:00Z",
+		  "cover": {
+			"url": "https://covers.storytel.com/jpg-640/9781781105719.2e12fcef-88ae-4450-a9c2-f6c6be6ec234",
+			"width": 427,
+			"height": 640
+		  },
+		  "released": true,
+		  "lockedContent": false,
+		  "isReleased": true,
+		  "isLockedContent": false
+		},
+		{
+		  "id": "134993",
+		  "type": "abook",
+		  "releaseDate": "2017-10-09T00:00:00Z",
+		  "cover": {
+			"url": "https://covers.storytel.com/jpg-640/9781781109014.a9623ac2-af6e-439f-82e3-57f83ef9948c",
+			"width": 640,
+			"height": 640
+		  },
+		  "released": true,
+		  "lockedContent": false,
+		  "isReleased": true,
+		  "isLockedContent": false
+		}
+	  ],
+	  "averageRating": 4.81,
+	  "seriesInfo": {
+		"id": "24647",
+		"name": "Harry Potter",
+		"orderInSeries": 7,
+		"deepLink": "storytel://booklist/series/24647/Harry%20Potter"
+	  },
+	  "decoratedTitle": "Harry Potter och DÃ¶dsrelikerna",
+	  "similarItemsDeepLink": null,
+	  "kidsBook": true,
+	  "resultType": "book"
+	},
+	{
+	  "id": "134970",
+	  "deepLink": "storytel://books/109585",
+	  "title": "Harry Potter och Hemligheternas kammare",
+	  "bookId": 109585,
+	  "shareUrl": "https://www.storytel.com/se/sv/books/109585?appRedirect=true",
+	  "language": "sv",
+	  "authors": [
+		{
+		  "id": "1998",
+		  "name": "J.K. Rowling",
+		  "deepLink": "storytel://booklist/authors/1998/J.K.%20Rowling"
+		}
+	  ],
+	  "narrators": [
+		{
+		  "id": "167",
+		  "name": "BjÃ¶rn Kjellman",
+		  "deepLink": "storytel://booklist/narrators/167/Bj%C3%B6rn%20Kjellman"
+		}
+	  ],
+	  "formats": [
+		{
+		  "id": "919648",
+		  "type": "ebook",
+		  "releaseDate": "2015-12-08T00:00:00Z",
+		  "cover": {
+			"url": "https://covers.storytel.com/jpg-640/9781781105658.456743a3-8761-464e-a978-ab6c7e2a0639",
+			"width": 427,
+			"height": 640
+		  },
+		  "released": true,
+		  "lockedContent": false,
+		  "isReleased": true,
+		  "isLockedContent": false
+		},
+		{
+		  "id": "134970",
+		  "type": "abook",
+		  "releaseDate": "2017-07-13T00:00:00Z",
+		  "cover": {
+			"url": "https://covers.storytel.com/jpg-640/9781781108963.840360dc-84e7-4a25-af7f-e254cd897ff7",
+			"width": 640,
+			"height": 640
+		  },
+		  "released": true,
+		  "lockedContent": false,
+		  "isReleased": true,
+		  "isLockedContent": false
+		}
+	  ],
+	  "averageRating": 4.72,
+	  "seriesInfo": {
+		"id": "24647",
+		"name": "Harry Potter",
+		"orderInSeries": 2,
+		"deepLink": "storytel://booklist/series/24647/Harry%20Potter"
+	  },
+	  "decoratedTitle": "Harry Potter och Hemligheternas kammare",
+	  "similarItemsDeepLink": null,
+	  "kidsBook": true,
+	  "resultType": "book"
+	},
+	{
+	  "id": "134989",
+	  "deepLink": "storytel://books/109589",
+	  "title": "Harry Potter och Halvblodsprinsen",
+	  "bookId": 109589,
+	  "shareUrl": "https://www.storytel.com/se/sv/books/109589?appRedirect=true",
+	  "language": "sv",
+	  "authors": [
+		{
+		  "id": "1998",
+		  "name": "J.K. Rowling",
+		  "deepLink": "storytel://booklist/authors/1998/J.K.%20Rowling"
+		}
+	  ],
+	  "narrators": [
+		{
+		  "id": "167",
+		  "name": "BjÃ¶rn Kjellman",
+		  "deepLink": "storytel://booklist/narrators/167/Bj%C3%B6rn%20Kjellman"
+		}
+	  ],
+	  "formats": [
+		{
+		  "id": "134989",
+		  "type": "abook",
+		  "releaseDate": "2017-08-14T00:00:00Z",
+		  "cover": {
+			"url": "https://covers.storytel.com/jpg-640/9781781109007.ab9e52c4-f6ce-42f1-a4ea-f04dfbea446a",
+			"width": 640,
+			"height": 640
+		  },
+		  "released": true,
+		  "lockedContent": false,
+		  "isReleased": true,
+		  "isLockedContent": false
+		},
+		{
+		  "id": "891588",
+		  "type": "ebook",
+		  "releaseDate": "2015-12-08T00:00:00Z",
+		  "cover": {
+			"url": "https://covers.storytel.com/jpg-640/9781781105702.1245a4ae-cbb0-4611-978b-8ec6da3bdc58",
+			"width": 427,
+			"height": 640
+		  },
+		  "released": true,
+		  "lockedContent": false,
+		  "isReleased": true,
+		  "isLockedContent": false
+		}
+	  ],
+	  "averageRating": 4.77,
+	  "seriesInfo": {
+		"id": "24647",
+		"name": "Harry Potter",
+		"orderInSeries": 6,
+		"deepLink": "storytel://booklist/series/24647/Harry%20Potter"
+	  },
+	  "decoratedTitle": "Harry Potter och Halvblodsprinsen",
+	  "similarItemsDeepLink": null,
+	  "kidsBook": true,
+	  "resultType": "book"
+	},
+	{
+	  "id": "134983",
+	  "deepLink": "storytel://books/109588",
+	  "title": "Harry Potter och Fenixorden",
+	  "bookId": 109588,
+	  "shareUrl": "https://www.storytel.com/se/sv/books/109588?appRedirect=true",
+	  "language": "sv",
+	  "authors": [
+		{
+		  "id": "1998",
+		  "name": "J.K. Rowling",
+		  "deepLink": "storytel://booklist/authors/1998/J.K.%20Rowling"
+		}
+	  ],
+	  "narrators": [
+		{
+		  "id": "167",
+		  "name": "BjÃ¶rn Kjellman",
+		  "deepLink": "storytel://booklist/narrators/167/Bj%C3%B6rn%20Kjellman"
+		}
+	  ],
+	  "formats": [
+		{
+		  "id": "919645",
+		  "type": "ebook",
+		  "releaseDate": "2015-12-08T00:00:00Z",
+		  "cover": {
+			"url": "https://covers.storytel.com/jpg-640/9781781105696.4e33083e-10c7-47e7-b037-b66fb9684127",
+			"width": 427,
+			"height": 640
+		  },
+		  "released": true,
+		  "lockedContent": false,
+		  "isReleased": true,
+		  "isLockedContent": false
+		},
+		{
+		  "id": "134983",
+		  "type": "abook",
+		  "releaseDate": "2017-09-11T00:00:00Z",
+		  "cover": {
+			"url": "https://covers.storytel.com/jpg-640/9781781108994.d0d674b0-bed4-4085-85bc-4e8a2f0d3706",
+			"width": 640,
+			"height": 640
+		  },
+		  "released": true,
+		  "lockedContent": false,
+		  "isReleased": true,
+		  "isLockedContent": false
+		}
+	  ],
+	  "averageRating": 4.73,
+	  "seriesInfo": {
+		"id": "24647",
+		"name": "Harry Potter",
+		"orderInSeries": 5,
+		"deepLink": "storytel://booklist/series/24647/Harry%20Potter"
+	  },
+	  "decoratedTitle": "Harry Potter och Fenixorden",
+	  "similarItemsDeepLink": null,
+	  "kidsBook": true,
+	  "resultType": "book"
+	},
+	{
+	  "id": "134978",
+	  "deepLink": "storytel://books/109587",
+	  "title": "Harry Potter och Den Flammande BaÌˆgaren",
+	  "bookId": 109587,
+	  "shareUrl": "https://www.storytel.com/se/sv/books/109587?appRedirect=true",
+	  "language": "sv",
+	  "authors": [
+		{
+		  "id": "1998",
+		  "name": "J.K. Rowling",
+		  "deepLink": "storytel://booklist/authors/1998/J.K.%20Rowling"
+		}
+	  ],
+	  "narrators": [
+		{
+		  "id": "167",
+		  "name": "BjÃ¶rn Kjellman",
+		  "deepLink": "storytel://booklist/narrators/167/Bj%C3%B6rn%20Kjellman"
+		}
+	  ],
+	  "formats": [
+		{
+		  "id": "919671",
+		  "type": "ebook",
+		  "releaseDate": "2015-12-08T00:00:00Z",
+		  "cover": {
+			"url": "https://covers.storytel.com/jpg-640/9781781105689.189eb2d6-3362-4ce9-b326-0de4f27ee7e7",
+			"width": 427,
+			"height": 640
+		  },
+		  "released": true,
+		  "lockedContent": false,
+		  "isReleased": true,
+		  "isLockedContent": false
+		},
+		{
+		  "id": "134978",
+		  "type": "abook",
+		  "releaseDate": "2017-09-07T00:00:00Z",
+		  "cover": {
+			"url": "https://covers.storytel.com/jpg-640/9781781108987.70ac03bb-3a8c-4d49-bd44-5bc5740f3d49",
+			"width": 640,
+			"height": 640
+		  },
+		  "released": true,
+		  "lockedContent": false,
+		  "isReleased": true,
+		  "isLockedContent": false
+		}
+	  ],
+	  "averageRating": 4.75,
+	  "seriesInfo": {
+		"id": "24647",
+		"name": "Harry Potter",
+		"orderInSeries": 4,
+		"deepLink": "storytel://booklist/series/24647/Harry%20Potter"
+	  },
+	  "decoratedTitle": "Harry Potter och Den Flammande BaÌˆgaren",
+	  "similarItemsDeepLink": null,
+	  "kidsBook": true,
+	  "resultType": "book"
+	},
+	{
+	  "id": "117918",
+	  "deepLink": "storytel://books/85104",
+	  "title": "Harry Potter and the Order of the Phoenix",
+	  "bookId": 85104,
+	  "shareUrl": "https://www.storytel.com/se/sv/books/85104?appRedirect=true",
+	  "language": "en",
+	  "authors": [
+		{
+		  "id": "1998",
+		  "name": "J.K. Rowling",
+		  "deepLink": "storytel://booklist/authors/1998/J.K.%20Rowling"
+		}
+	  ],
+	  "narrators": [
+		{
+		  "id": "2414",
+		  "name": "Stephen Fry",
+		  "deepLink": "storytel://booklist/narrators/2414/Stephen%20Fry"
+		}
+	  ],
+	  "formats": [
+		{
+		  "id": "919662",
+		  "type": "ebook",
+		  "releaseDate": "2015-12-08T00:00:00Z",
+		  "cover": {
+			"url": "https://covers.storytel.com/jpg-640/9781781100240.00ff00de-3793-429d-9ee2-38638c7d1632",
+			"width": 427,
+			"height": 640
+		  },
+		  "released": true,
+		  "lockedContent": false,
+		  "isReleased": true,
+		  "isLockedContent": false
+		},
+		{
+		  "id": "117918",
+		  "type": "abook",
+		  "releaseDate": "2015-11-20T00:00:00Z",
+		  "cover": {
+			"url": "https://covers.storytel.com/jpg-640/9781781102404.ccf6aa08-54cd-4a36-bc90-2b2412c14e07",
+			"width": 640,
+			"height": 640
+		  },
+		  "released": true,
+		  "lockedContent": false,
+		  "isReleased": true,
+		  "isLockedContent": false
+		}
+	  ],
+	  "averageRating": 4.8,
+	  "seriesInfo": {
+		"id": "59246",
+		"name": "Harry Potter",
+		"orderInSeries": 5,
+		"deepLink": "storytel://booklist/series/59246/Harry%20Potter"
+	  },
+	  "decoratedTitle": "Harry Potter and the Order of the Phoenix",
+	  "similarItemsDeepLink": null,
+	  "kidsBook": true,
+	  "resultType": "book"
+	},
+	{
+	  "id": "117931",
+	  "deepLink": "storytel://books/85105",
+	  "title": "Harry Potter and the Philosopher's Stone",
+	  "bookId": 85105,
+	  "shareUrl": "https://www.storytel.com/se/sv/books/85105?appRedirect=true",
+	  "language": "en",
+	  "authors": [
+		{
+		  "id": "1998",
+		  "name": "J.K. Rowling",
+		  "deepLink": "storytel://booklist/authors/1998/J.K.%20Rowling"
+		}
+	  ],
+	  "narrators": [
+		{
+		  "id": "2414",
+		  "name": "Stephen Fry",
+		  "deepLink": "storytel://booklist/narrators/2414/Stephen%20Fry"
+		}
+	  ],
+	  "formats": [
+		{
+		  "id": "117931",
+		  "type": "abook",
+		  "releaseDate": "2015-11-20T00:00:00Z",
+		  "cover": {
+			"url": "https://covers.storytel.com/jpg-640/9781781102367.3ec4b6fd-f40e-4402-b045-d0c37a45e8b3",
+			"width": 640,
+			"height": 640
+		  },
+		  "released": true,
+		  "lockedContent": false,
+		  "isReleased": true,
+		  "isLockedContent": false
+		},
+		{
+		  "id": "919647",
+		  "type": "ebook",
+		  "releaseDate": "2015-12-08T00:00:00Z",
+		  "cover": {
+			"url": "https://covers.storytel.com/jpg-640/9781781100219.cabb3486-2db1-45ea-b76d-176745a4062b",
+			"width": 427,
+			"height": 640
+		  },
+		  "released": true,
+		  "lockedContent": false,
+		  "isReleased": true,
+		  "isLockedContent": false
+		}
+	  ],
+	  "averageRating": 4.69,
+	  "seriesInfo": {
+		"id": "59246",
+		"name": "Harry Potter",
+		"orderInSeries": 1,
+		"deepLink": "storytel://booklist/series/59246/Harry%20Potter"
+	  },
+	  "decoratedTitle": "Harry Potter and the Philosopher's Stone",
+	  "similarItemsDeepLink": null,
+	  "kidsBook": true,
+	  "resultType": "book"
+	},
+	{
+	  "id": "117935",
+	  "deepLink": "storytel://books/85106",
+	  "title": "Harry Potter and the Prisoner of Azkaban",
+	  "bookId": 85106,
+	  "shareUrl": "https://www.storytel.com/se/sv/books/85106?appRedirect=true",
+	  "language": "en",
+	  "authors": [
+		{
+		  "id": "1998",
+		  "name": "J.K. Rowling",
+		  "deepLink": "storytel://booklist/authors/1998/J.K.%20Rowling"
+		}
+	  ],
+	  "narrators": [
+		{
+		  "id": "2414",
+		  "name": "Stephen Fry",
+		  "deepLink": "storytel://booklist/narrators/2414/Stephen%20Fry"
+		}
+	  ],
+	  "formats": [
+		{
+		  "id": "117935",
+		  "type": "abook",
+		  "releaseDate": "2015-11-20T00:00:00Z",
+		  "cover": {
+			"url": "https://covers.storytel.com/jpg-640/9781781102381.b8e58597-803f-4bcd-aba1-b86d57e74b63",
+			"width": 640,
+			"height": 640
+		  },
+		  "released": true,
+		  "lockedContent": false,
+		  "isReleased": true,
+		  "isLockedContent": false
+		},
+		{
+		  "id": "919683",
+		  "type": "ebook",
+		  "releaseDate": "2015-12-08T00:00:00Z",
+		  "cover": {
+			"url": "https://covers.storytel.com/jpg-640/9781781100233.647fae77-dd16-4aa7-b1fb-e62a95fdec93",
+			"width": 427,
+			"height": 640
+		  },
+		  "released": true,
+		  "lockedContent": false,
+		  "isReleased": true,
+		  "isLockedContent": false
+		}
+	  ],
+	  "averageRating": 4.81,
+	  "seriesInfo": {
+		"id": "59246",
+		"name": "Harry Potter",
+		"orderInSeries": 3,
+		"deepLink": "storytel://booklist/series/59246/Harry%20Potter"
+	  },
+	  "decoratedTitle": "Harry Potter and the Prisoner of Azkaban",
+	  "similarItemsDeepLink": null,
+	  "kidsBook": true,
+	  "resultType": "book"
+	},
+	{
+	  "id": "117908",
+	  "deepLink": "storytel://books/85102",
+	  "title": "Harry Potter and the Goblet of Fire",
+	  "bookId": 85102,
+	  "shareUrl": "https://www.storytel.com/se/sv/books/85102?appRedirect=true",
+	  "language": "en",
+	  "authors": [
+		{
+		  "id": "1998",
+		  "name": "J.K. Rowling",
+		  "deepLink": "storytel://booklist/authors/1998/J.K.%20Rowling"
+		}
+	  ],
+	  "narrators": [
+		{
+		  "id": "2414",
+		  "name": "Stephen Fry",
+		  "deepLink": "storytel://booklist/narrators/2414/Stephen%20Fry"
+		}
+	  ],
+	  "formats": [
+		{
+		  "id": "891570",
+		  "type": "ebook",
+		  "releaseDate": "2015-12-08T00:00:00Z",
+		  "cover": {
+			"url": "https://covers.storytel.com/jpg-640/9781781105672.5488dc38-c73e-4c99-a6d5-249f23e1cb27",
+			"width": 427,
+			"height": 640
+		  },
+		  "released": true,
+		  "lockedContent": false,
+		  "isReleased": true,
+		  "isLockedContent": false
+		},
+		{
+		  "id": "117908",
+		  "type": "abook",
+		  "releaseDate": "2015-11-20T00:00:00Z",
+		  "cover": {
+			"url": "https://covers.storytel.com/jpg-640/9781781102398.2764667e-c998-4ddd-9b12-ab7bc1699f46",
+			"width": 640,
+			"height": 640
+		  },
+		  "released": true,
+		  "lockedContent": false,
+		  "isReleased": true,
+		  "isLockedContent": false
+		}
+	  ],
+	  "averageRating": 4.82,
+	  "seriesInfo": {
+		"id": "59246",
+		"name": "Harry Potter",
+		"orderInSeries": 4,
+		"deepLink": "storytel://booklist/series/59246/Harry%20Potter"
+	  },
+	  "decoratedTitle": "Harry Potter and the Goblet of Fire",
+	  "similarItemsDeepLink": null,
+	  "kidsBook": true,
+	  "resultType": "book"
+	}
+  ]
+}

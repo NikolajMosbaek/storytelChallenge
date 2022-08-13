@@ -13,7 +13,7 @@ class storyChallengeTests: XCTestCase {
 	private var cancellables: Set<AnyCancellable> = []
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+ 
     }
 
     override func tearDownWithError() throws {
@@ -21,23 +21,20 @@ class storyChallengeTests: XCTestCase {
     }
 	
 	
-	func testBookListVM() throws {
-		let service = BookListService()
+	
+	func testBookListService() {
+		let expectation = self.expectation(description: "Did receive books")
+		let service = BookListService(dependency: BookListStoreMock(stub: self.loadStub(name: "booklist", fileExtension: "json")))
 		service
 			.getList(page: 0)
-			.sink { completion in
-				switch completion {
-				case .failure(let error):
-					break
-					
-				case .finished:
-					break
-				}
-			} receiveValue: { books in
+			.sink(receiveCompletion: { _ in
 				
-			}
-			.store(in: &cancellables)
-
+			}, receiveValue: { books in
+				expectation.fulfill()
+			})
+			.store(in: &self.cancellables)
+		
+		waitForExpectations(timeout: 10)
 	}
 
 }
