@@ -22,8 +22,8 @@ class BookListCell: UITableViewCell {
 	private let margine: CGFloat = 8
 	private let padding: CGFloat = 4
 	
-	private lazy var image: UIImageView = {
-		let imageView = UIImageView()
+	private lazy var image: LoadableImageView = {
+		let imageView = LoadableImageView()
 		imageView.contentMode = .scaleAspectFit
 		imageView.translatesAutoresizingMaskIntoConstraints = false
 		return imageView
@@ -67,7 +67,7 @@ class BookListCell: UITableViewCell {
 	}
 	
 	private func addImage(_ imageURL: URL) {
-		image.loadFrom(url: imageURL)
+		image.setImage(url: imageURL)
 		self.addSubview(image)
 
 		NSLayoutConstraint.activate([
