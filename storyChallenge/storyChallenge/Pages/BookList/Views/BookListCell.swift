@@ -90,6 +90,8 @@ class BookListCell: UITableViewCell {
 	}
 	
 	private func addNarrators(_ narrators: [String]) {
+		narratorLabel.isHidden = narrators.isEmpty
+		
 		narratorLabel.text = "with \(narrators.joined(separator: ", "))"
 		self.addSubview(narratorLabel)
 		
@@ -101,6 +103,8 @@ class BookListCell: UITableViewCell {
 	}
 
 	private func addAuthors(_ authors: [String]) {
+		authorLable.isHidden = authors.isEmpty
+		
 		authorLable.text = "by \(authors.joined(separator: ", "))"
 		self.addSubview(authorLable)
 		
